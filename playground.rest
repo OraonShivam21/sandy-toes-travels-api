@@ -33,7 +33,7 @@ Content-Type: application/json
 }
 
 ### Getting data from /packages
-GET http://localhost:3000/packages/6
+GET http://localhost:3000/packages/18
 
 ### Posting data to /packages
 POST http://localhost:3000/packages
@@ -57,15 +57,15 @@ Content-Type: application/json
     ]
 }
 
-### Patching data for id 6
-PATCH http://localhost:3000/packages/6
+### Patching data for id 18
+PATCH http://localhost:3000/packages/18
 Content-Type: application/json
 
 {
-  "title": "Victoria Falls, Zimbabwe and Zambia",
-  "description": "One of the seven natural wonders of the world, Victoria Falls spans the Zimbabwe and Zambia borders. “The smoke that thunders,” as it is known to locals, and its surroundings, are hubs for white-water rafting, helicopter rides, big-game safaris, and other thrilling adventures.",
+  "title": "Zhangye National Geopark, China",
+  "description": "Distinct rolling bands of orange, cream, yellow, brown, and russet against jagged mountain peaks make this geological anomaly in Gansu, China look like a psychedelic scene on Mars.",
   "duration": "3 days",
-  "price": "129",
+  "price": "109",
   "currency": "USD",
   "services": [
     "4-5 star hotels with modern amenities",
@@ -73,13 +73,27 @@ Content-Type: application/json
     "Daily breakfast, lunch, and dinner"
   ],
   "images": [
-    "https://traveladvo.com/wp-content/uploads/2020/04/Which-side-is-the-best-Zambia-or-Zimbabwe.jpg",
-    "https://guardian.ng/wp-content/uploads/life/2015/12/victoria-falls-zimbabwe-zambia.jpg",
-    "https://2.bp.blogspot.com/-lWrWWA0MCN0/XGivWQ9iGZI/AAAAAAABpEA/u2r2nJzrU8M6GFydN0RzqqDgcWgIZT9NgCLcBGAs/s1600/Victoria%2BFalls%252C%2BZimbabwe%2B%2526%2BZambia.jpg"
+    "https://www.nerdstravel.com/wp-content/uploads/2020/03/Zhangye-Danxia-Landform-The-Rainbow-Mountains-of-China-scaled.jpg",
+    "https://2.bp.blogspot.com/-OO7Giec5bkA/VevoKlSkbaI/AAAAAAAACWE/KoxWTLLWeQs/s1600/82012369-1c33-48c9-8746-26a802836ea8-1024x768.jpeg",
+    "https://2.bp.blogspot.com/-CWoTKEteRZM/V-1SomfEITI/AAAAAAAAW9M/VkbvsAEIX7k3g8OoYkZfS-FPdq8jNxePwCLcB/s1600/%2B%25287%2529.jpg"
   ],
-  "id": 6
+  "id": 18
 }
 
 
 ### Deleting data from /packages
 DELETE http://localhost:3000/packages/6
+
+### Getting data from /feedback
+GET http://localhost:3000/reviews
+
+### Posting data to /feedback
+POST http://localhost:3000/reviews
+Content-Type: application/json
+
+{
+    "firstname": "Rohan",
+    "lastname": "Rajput",
+    "rating": "4.4",
+    "description": "During our Taormina, Sicily, me and my wife intially thought that the package was a little expensive than what we thought would be reasonable, but they gave so good service for the price that I would say, that the trip was worth each dollar. Thank you so much for this amazing trip."
+}
