@@ -392,7 +392,7 @@
       "title": "Zhangye National Geopark, China",
       "description": "Distinct rolling bands of orange, cream, yellow, brown, and russet against jagged mountain peaks make this geological anomaly in Gansu, China look like a psychedelic scene on Mars.",
       "duration": "3 days",
-      "price": "99",
+      "price": "109",
       "currency": "USD",
       "services": [
         "4-5 star hotels with modern amenities",
@@ -1073,5 +1073,41 @@
       "id": 55
     }
   ],
-  "feedback": []
+  "reviews": [
+    {
+      "firstname": "John",
+      "lastname": "Doe",
+      "rating": "4.8",
+      "description": "Me and my wife booked a Bagan, Mayanmar trip for us as we wanted to start travelling around the world and wanted to explore a few places before deciding on that. But the services provided by Sandy Toes Travels are too good, they provided us with the best package available, also took care of us with everything during our journey. The team is quite good with their work and provide a very humble services to us. Thank you for making our journey so loveable and memorable.",
+      "id": 1
+    },
+    {
+      "firstname": "Samantha",
+      "lastname": "Williams",
+      "rating": "4.4",
+      "description": "My family decided to visit Pamukkale, Turkey, and we couldn't find any good tour package for us, but the Sandy Toes Travels provided us with a very reasonable price package for this trip. The on-board service and treatment given to us was really good. My parents also loved this trip as they said it was quite enjoyable.",
+      "id": 2
+    },
+    {
+      "firstname": "Julia",
+      "lastname": "Roberts",
+      "rating": "4.7",
+      "description": "My husband and I decided to visit Acadia National Park, Maine, during our exploration vacation. It was truly the most memorable experience for both of us. The service provided to us from the company was quite good and they also treated us really well. I also had some health issues during the trip but the team helped me a lot during the time, so thank you so much for that.",
+      "id": 3
+    },
+    {
+      "firstname": "Sammy",
+      "lastname": "Kims",
+      "rating": "4.2",
+      "description": "We enjoyed quite a lot during our Cat Island, The Bahamas trip. We had a blast and also enjoyed our time. Thanks a lot to the Sandy Toes Travels for their excellent service and package.",
+      "id": 4
+    },
+    {
+      "firstname": "Rohan",
+      "lastname": "Rajput",
+      "rating": "4.4",
+      "description": "During our Taormina, Sicily, me and my wife intially thought that the package was a little expensive than what we thought would be reasonable, but they gave so good service for the price that I would say, that the trip was worth each dollar. Thank you so much for this amazing trip.",
+      "id": 5
+    }
+  ]
 }
