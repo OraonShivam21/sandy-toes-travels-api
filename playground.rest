@@ -1,0 +1,85 @@
+### Getting data from /users
+GET http://localhost:3000/users
+
+### Posting data in /users
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username": "samanthawill246",
+    "password": "samanthawill246",
+    "email": "samanthawill246@gmail.com",
+    "role": "admin"
+}
+
+### Deleting id 1 from /users
+DELETE http://localhost:3000/users/1
+
+### Getting data from /services
+GET http://localhost:3000/services?_page=1&_limit=3
+
+### Posting data to /services
+POST http://localhost:3000/services
+Content-Type: application/json
+
+{
+    "title": "Best Tourist Packages",
+    "description": "Get an inside look on all the great packages and offers we provide, hand picked by our experts and chosen by our customers, we provide you with the best package that suits your wallet as well as your loved ones.",
+    "images": [
+        "https://www.picnicwale.com/assets/images/international-tour-packages.jpg",
+        "https://www.traveldilse.com/images/mar_images2.jpg",
+        "https://www.swisstours.com/images/holiday_revamp/banner.jpg"
+    ]
+}
+
+### Getting data from /packages
+GET http://localhost:3000/packages/6
+
+### Posting data to /packages
+POST http://localhost:3000/packages
+Content-Type: application/json
+
+{
+    "title": "Volcanoes National Park, Rwanda",
+    "description": "The scenery alone — waterfalls, calderas, misty bamboo forests — makes Volcanoes National Park a worthy contender of any travel list. The mystical setting is all the more special for hosting buffaloes, birds, golden monkeys, and the elusive mountain gorilla.",
+    "duration": "4 days",
+    "price": "189",
+    "currency": "USD",
+    "services": [
+        "4-5 star hotels with modern amenities",
+        "Private air-conditioned vehicles for free-roaming",
+        "Daily breakfast, lunch, and dinner"
+    ],
+    "images": [
+        "https://www.youramazingplaces.com/wp-content/uploads/2019/02/volcanoes-rwanda.jpg",
+        "https://www.tailormadeafrica.com/wp-content/uploads/Entrance-to-the-Volcanoes-National-Park.jpg",
+        "https://gobackpacking.com/wp-content/uploads/2016/11/virunga-mountains.jpg"
+    ]
+}
+
+### Patching data for id 6
+PATCH http://localhost:3000/packages/6
+Content-Type: application/json
+
+{
+  "title": "Victoria Falls, Zimbabwe and Zambia",
+  "description": "One of the seven natural wonders of the world, Victoria Falls spans the Zimbabwe and Zambia borders. “The smoke that thunders,” as it is known to locals, and its surroundings, are hubs for white-water rafting, helicopter rides, big-game safaris, and other thrilling adventures.",
+  "duration": "3 days",
+  "price": "129",
+  "currency": "USD",
+  "services": [
+    "4-5 star hotels with modern amenities",
+    "Private air-conditioned vehicles for free-roaming",
+    "Daily breakfast, lunch, and dinner"
+  ],
+  "images": [
+    "https://traveladvo.com/wp-content/uploads/2020/04/Which-side-is-the-best-Zambia-or-Zimbabwe.jpg",
+    "https://guardian.ng/wp-content/uploads/life/2015/12/victoria-falls-zimbabwe-zambia.jpg",
+    "https://2.bp.blogspot.com/-lWrWWA0MCN0/XGivWQ9iGZI/AAAAAAABpEA/u2r2nJzrU8M6GFydN0RzqqDgcWgIZT9NgCLcBGAs/s1600/Victoria%2BFalls%252C%2BZimbabwe%2B%2526%2BZambia.jpg"
+  ],
+  "id": 6
+}
+
+
+### Deleting data from /packages
+DELETE http://localhost:3000/packages/6
